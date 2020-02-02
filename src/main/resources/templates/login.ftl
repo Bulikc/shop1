@@ -2,6 +2,7 @@
 <#import "parts/footer.ftl" as f>
 <#import "parts/header.ftl" as h>
 <@c.page>
+    rrrrrrr
     <script language="javascript">
         var sr = 1;
 
