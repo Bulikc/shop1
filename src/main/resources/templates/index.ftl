@@ -1,40 +1,10 @@
 <#import "parts/common.ftl" as c>
+<#import "parts/footer.ftl" as f>
+<#import "parts/header.ftl" as h>
 <@c.page>
-    <!--Navigation-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-        <div class="container">
-            <a href="#" class="navbar-brand waves-effect">
-                <strong class="blue-text"><h3>Покупаем <span class="badge badge-secondary">Вместе</span></h3></strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-control="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"> </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="" class="nav-link waves-effect">Каталог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link waves-effect">Оплата</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link waves-effect">Контакты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link waves-effect">Поддержка</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item active">
-                        <a  href="" class="nav-link waves-effect"><span class="badge red z-depth-1 mr-1">1</span>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span class="clearfix d-none d-sm-inline-block">Корзина</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<@h.header>
 
-    </nav>
-
+</@h.header>
     <!--Slider-->
     <!--Carousel Wrapper-->
     <div id="carousel-ex" class="carousel slide carousel-fade" data-ride="carousel">
@@ -313,56 +283,28 @@
 
                 </div>
             </section>
-            <nav class="d-flex justify-content-center wow fadeIn">
-                <ul class="pagination pg-blue">
-                    <li class="page-item disable">
-                        <a href="#" class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
+            <nav aria-label="..." class="d-flex justify-content-center wow fadeIn">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                     </li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
+                    <li class="page-item" >
+                        <a class="page-link" href="#">2 </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
-                        <a href="" class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">1</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a href="" class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">2</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a href="" class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">3</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a href="" class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">4</span>
-                        </a>
-                    </li>
-                    <li class="page-item disable">
-                        <a href="#" class="page-link" aria-label="Previous">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
+                        <a class="page-link" href="#">Next</a>
                     </li>
                 </ul>
             </nav>
+
         </div>
     </main>
+<@f.footer>
 
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-        <div class="pt-4">
-            <a href="" class="btn-btn-outline-white" role="button">Контакты <i class="fa fa-graduation-cap ml-2"></i></a>
-        </div>
-        <hr class="my-4">
-        <div class="col-12 social padding">
-            <a href="#"><i class="fab fa-vk"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-odnoklassniki"></i></a>
-        </div>
-        <div class="footer-copy-right py-3">Autor Inc.</div>
-    </footer>
+</@f.footer>
+
 
 
 </@c.page>
