@@ -1,8 +1,5 @@
 package com.example.shop.controller;
 
-import com.example.shop.domain.User;
-import com.example.shop.repos.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,6 +29,6 @@ public class MainController {
 //        Iterable<User> users=userRepository.findAll();
 //        model.put("users", users);
 
-        return "hello";
+        return "index";
     }
 }
