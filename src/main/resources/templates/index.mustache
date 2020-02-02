@@ -47,6 +47,12 @@ logins
 {{#users}}
     {{email}}
 {{/users}}
+
+        <form action="/logout" method="post">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <input type="submit" value="Sign Out"/>
+</form>
+
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 		<div class="container">
 			<a href="#" class="navbar-brand waves-effect">
@@ -179,6 +185,7 @@ logins
 		</ul>
 		<form action="" class="form-inline">
 			<div class="md-form my-0">
+                <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
 				<input type="text" class="form-control mr-sm-2" placeholder="Поиск" aria-label="Поиск">
 			</div>
 

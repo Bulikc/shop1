@@ -1,4 +1,4 @@
-package com.example.shop;
+package com.example.shop.controller;
 
 import com.example.shop.domain.User;
 import com.example.shop.repos.UserRepository;
@@ -12,25 +12,26 @@ import java.util.Map;
 @Controller
 public class MainController {
 
-    @Autowired
-    private UserRepository userRepository;
+//    @Autowired
+//    private UserRepository userRepository;
 //531134
 
-    @GetMapping("/greeting")
+    @GetMapping("/main")
     public String greeting(
             @RequestParam(name="name", required=false, defaultValue="World") String name,
             Map<String, Object> model
     ) {
-        model.put("USERS", userRepository);
+      //  Iterable<User> users=userRepository.findAll();
+      //  model.put("users", users);
         return "index";//!!!
     }
 
-    @GetMapping
+    @GetMapping("/")
     public String main(Map<String, Object> model) {
-        model.put("some", "hello, letsCode!");
-        Iterable<User> users=userRepository.findAll();
-        model.put("users", users);
+//        model.put("some", "hello, letsCode!");
+//        Iterable<User> users=userRepository.findAll();
+//        model.put("users", users);
 
-        return "index";
+        return "hello";
     }
 }
