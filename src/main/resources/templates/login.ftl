@@ -8,7 +8,7 @@
         function obnovit()
         {
             window.location.reload();
-        };
+        }
 
         function next()
         {
@@ -22,11 +22,11 @@
             {
                 document.getElementById('button').value="Зарегистрировать";
                 refr.onclick=obnovit;
-            };
-        };
+            }
+        }
     </script>
     <@h.header>
-trhdfddbdfghgf
+trhdfddbdfghgf1
     </@h.header>
     <div class="row justify-content-center">
     <div class="d-flex justify-content-center wow fadeIn">
